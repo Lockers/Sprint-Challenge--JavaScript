@@ -7,7 +7,7 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 function consume (any1, any2, callback) {
-  return callback(any1, any2);
+  return (callback(any1, any2));
 };
 
 /* Step 2: Create several functions to callback with consume();
@@ -17,15 +17,15 @@ function consume (any1, any2, callback) {
 */
 
 function add (a, b) {
-  return a + b;
+  return console.log(a + b);
 }
 
 function multiply (a, b) {
-  return a * b;
+  return console.log(a * b);
 }
 
 function greeting (firstName, lastName) {
-  return `Hello ${firstName} ${lastName}, nice to meet you!`
+  return console.log(`Hello ${firstName} ${lastName}, nice to meet you!`)
 }
 
 
